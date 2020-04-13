@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Controller">
+   <center>
+        <Pane fx:id="centerPane" prefHeight="400" prefWidth="500">
+            <Canvas fx:id="canvas" />
+        </Pane>
+   </center>
+   <bottom>
+       <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+           <TextField prefHeight="26.0" prefWidth="84.0" fx:id="x1Field" />
+           <TextField prefHeight="26.0" prefWidth="84.0" fx:id="x2Field" />
+           <TextField fx:id="y1Field" prefHeight="26.0" prefWidth="84.0" />
+           <TextField fx:id="y2Field" prefHeight="26.0" prefWidth="84.0" />
+           <Button mnemonicParsing="false" onAction="#update" text="Обновить" />
+       </ToolBar>
+   </bottom>
+</BorderPane>
